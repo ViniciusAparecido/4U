@@ -16,7 +16,7 @@ body {
 }
 
 a {
-  color: aliceblue;
+  color: #e4e4e4;
 }
 
 /* *  navbar  */
@@ -74,29 +74,141 @@ a {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+
+.hero__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.hero p {
+.hero__container h1 {
+  margin-top: 2.8em;
   font-size: 5em;
   text-align: center;
   font-weight: bold;
-  color: rgb(255, 255, 255);
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.815);
+  color: #ffffff;
+  text-shadow: 3px 3px #000000d0;
 }
 
-.hero a {
+.hero__container a {
   padding: 15px 30px;
-  background-color: #f4f4f4;
-  border: 2px solid #026ca1;
-  color: #006192;
+  background-color: #ececec;
+  border: 2px solid #000000c0;
+  color: #000000c0;
   border-radius: 10px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.hero__container p {
+  color: #e4e4e4;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-shadow: 2px 2px #000000d0;
+  background-color: #000000c0;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+/* *  objetivo  */
+.objetivo {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.objetivo__container {
+  margin-top: 4em;
+  margin-bottom: 3em;
+}
+
+.objetivo__container p {
+  margin-top: 2em;
+  padding: 0 30px;
+  font-size: 1.3em;
+  color: #161616;
+}
+
+.objetivo__container img {
+  margin-top: 6em;
+  width: 90%;
+  min-width: 250px;
+  border-radius: 4px;
+}
+
+/* *  fazer  */
+.sobre {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  color: #161616;
+}
+
+.somos h3 {
+  font-size: 2.8em;
+  text-transform: uppercase;
+  color: #24a55c;
+}
+
+.somos p {
+  margin-top: 1.6em;
+  font-size: 1.3em;
+}
+
+.sobre__secundario {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.sobre__secundario h4 {
+  color: #24a55c;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-top: 1.5em;
+}
+
+.sobre__secundario p {
+  font-size: 1.2em;
+  margin-top: 0.5em;
+}
+
+/* *  footer  */
+footer {
+  max-width: 100%;
+  background: #e4e4e4;
+  margin: 0 auto;
+  padding: 30px 0;
+  text-align: center;
+  margin-top: 5em;
+}
+
+/* *  icon  */
+ion-icon {
+  /* cursor: pointer; */
+  font-size: 28px;
+  padding: 0 10px;
+  color: #424242;
+  transition: 0.5s;
+}
+
+.instagram:hover {
+  color: #e4405f;
+}
+
+.facebook:hover {
+  color: #1877f2;
+}
+
+.youtube:hover {
+  color: #ff0000;
+}
+
+.linkedin:hover {
+  color: #0a66c2;
 }
 
 @media screen and (max-width: 768px) {
@@ -146,23 +258,6 @@ a {
     width: 100%;
   }
 
-  .navbar__links--btn {
-    padding: 0;
-    border-radius: 0;
-    background-color: #003e5d;
-    color: #f4f4f4;
-    transition: all 0.4s ease-out;
-  }
-
-  .navbar__links--btn:hover {
-    border: none;
-    padding: 0;
-    border-radius: 0;
-    background-color: #003e5d;
-    color: #f4f4f4;
-    trasition: all 0.4s ease-out;
-  }
-
   #mobile__menu {
     position: absolute;
     top: 20%;
@@ -191,7 +286,27 @@ a {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .hero p {
+  .hero__container h1 {
+    margin-top: 4em;
     font-size: 3em;
+  }
+
+  .somos h3 {
+    font-size: 2.2em;
+    padding: 0 10px;
+  }
+
+  .somos p {
+    font-size: 1.1em;
+    padding: 0 20px;
+  }
+
+  .sobre__secundario h4 {
+    font-size: 1.3em;
+  }
+
+  .sobre__secundario p {
+    font-size: 1.03em;
+    padding: 0 20px;
   }
 }
